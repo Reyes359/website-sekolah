@@ -1,0 +1,38 @@
+Mulai
+
+function displayHomePage
+	DISPLAY "Selamat Datang Di Website SMPN 4 Genteng"
+	DISPLAY navigationBar
+end function
+
+function navigationBar
+	DISPLAY "Daftar Akun Sebagai Siswa"
+	DISPLAY	"Login Sebagai Siswa"
+	DISPLAY "Event"
+	DISPLAY "Tentang Kami"
+	DISPLAY "Kontak"
+	DISPLAY "Staff Dewan Guru"
+	DISPLAY "Bantuan"
+	DISPLAY "Fasilitas"
+	pilihanUser = GET_USER_INPUT("Pilih Menu:")
+
+	if pilihanUser = Daftar THEN
+		displayDaftarPage()
+	elseif pilihanUser = Login THEN
+		displayLoginPage()
+	elseif pilihanUser = Event THEN
+		displayEventPage()
+	elseif pilihanUser = Tentang Kami THEN
+		displayTentangKamiPage()
+	elseif pilihanUser = Kontak THEN 
+		displayKontakPage()
+	elseif pilihanUser = Staff Dewan Guru THEN
+		displayStaffDewanGuruPage()
+	elseif pilihanUser = Bantuan THEN
+		displayBantuanPage()
+	elseif pilihanUser = Fasilitas THEN
+		displayFasilitasPage()
+	endif
+end function
+
+	
